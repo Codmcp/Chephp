@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowerment Campaign</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #262C76;
+        }
+        header {
+            background-color: #040730;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #040730;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #;
+        }
+        p {
+            color: white;
+            line-height: 1.6;
+        }
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .image-wrapper {
+            width: 30%;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .image-wrapper img {
+            width: 100%;
+            transition: transform 0.5s ease;
+        }
+        .image-wrapper:hover img {
+            transform: translateX(10px);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #3F51B5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #402687;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .content {
+            animation: fadeIn 2s;
+        }
+        
+        
+        .otf {width: 130px;
+    height: 60px;
+    position: relative;
+    top: 9px;
+    left: 20px;}
+    
+    .pm {position: relative;
+    text-align: center;
+    color: #AC1B1E;
+    font-size: 50px;}
+    
+    
+.menu-icon {
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-icon .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #292F7D;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu {
+    width: 200px;
+    background-color: #6941BC;
+    position: fixed;
+    top: 50px;
+    right: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease, right 0.5s ease;
+    transform: perspective(600px) rotateY(-90deg);
+    transform-origin: right;
+    border-radius: 50px;
+    z-index: 1000;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #FF2945;
+}
+
+.menu.open {
+    right: 0;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.menu-icon.open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+   
+    </style>
+</head>
+<body>
+    <header>
+        <img class="otf" src="https://resourcesss.github.io/Pics/logo.png" >
+        <h1>Empowerment Campaign</h1>
+    </header>
+    
+    <div class="menu-icon" id="menuIcon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    
+    
+    <h1 class="pm"> <strong>Get involved today</strong> </h1>
+    
+    <section class="content">
+        <p>Ladies and gentlemen, today we gather to affirm our commitment to a brighter future. A future where human rights are sacrosanct, where women leaders stand tall, and where our ideological foundation guides the next generation.</p>
+        <p>We believe in a system that empowers the marginalized, educates the ignorant, and uplifts the oppressed. A system that celebrates diversity and promotes inclusivity.</p>
+        <p>And we're proud to say that our efforts have resonated with the people. We've received an overwhelming 99.8% positive feedback from those who share our vision.</p>
+        <p>But our work is far from over. We must continue to fight for our causes, to care for those in need, and to grow our party into a force for change.</p>
+        <p>We will win elections, not for personal gain, but to serve the people. We will get involved, not just to participate, but to make a difference.</p>
+        <p>Together, let us build a world where every individual can live with dignity, respect, and hope. A world where our leadership is not about power, but about empowering others.</p>
+        <p>Join us on this journey, and together, we shall create a brighter future for all!</p>
+        <a href="#" class="button">Get Involved</a>
+    </section>
+    
+    </section>
+    
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.getElementById('menuIcon');
+    const menu = document.getElementById('menu');
+
+    menuIcon.addEventListener('click', () => {
+        menuIcon.classList.toggle('open');
+        menu.classList.toggle('open');
+    });
+});
+</script>
+    
+</body>
+</html>
+</html>
