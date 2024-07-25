@@ -234,10 +234,10 @@ $country_name = $country_names[$country_code]['name'] ?? $country_code;
 $phone_code = $country_names[$country_code]['code'] ?? 'Unknown';
 
 // Database connection details
-$servername = "sql311.infinityfree.com";
-$username_db = "if0_36974208";
-$password_db = "e7j6klwq5xwfQl";
-$dbname = "if0_36974208_Data";
+$servername = "sql304.infinityfree.com";
+$username_db = "if0_36948794";
+$password_db = "nrPgMPUVzI";
+$dbname = "if0_36948794_Data";
 
 // Create connection
 $conn = new mysqli($servername, $username_db, $password_db, $dbname);
